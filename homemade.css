@@ -1,0 +1,21 @@
+img {
+  max-width: 400px;
+  border: solid 1px teal;
+  border-radius: 10px;
+}
+
+.row {
+  padding: 40px;
+}
+body {
+  margin: 0 auto;
+}
+body .container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 900px;
+  background-color: rgb(251, 237, 230);
+  padding: 30px;
+}
