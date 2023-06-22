@@ -1,21 +1,70 @@
-img {
-  max-width: 400px;
-  border: solid 1px teal;
-  border-radius: 10px;
-}
-
-.row {
-  padding: 40px;
-}
-body {
-  margin: 0 auto;
+body .con {
+  background-color: rgb(251, 237, 230);
+  text-align: center;
 }
 body .container {
-  margin-top: 50px;
+  font-family: 'Anonymous Pro', monospace;
+  text-align: initial;
   margin-bottom: 50px;
-  padding-right: 30px;
-  padding-left: 30px;
-  max-width: 900px;
-  background-color: rgb(251, 237, 230);
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 5px;
   padding: 30px;
+}
+.cosmetic-part {
+  margin-top: 20px;
+  padding: 0;
+}
+.medicine-part {
+  margin-top: 20px;
+}
+.scratch-part {
+  margin-top: 20px;
+}
+.container h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.container h3 {
+  text-align: center;
+
+  font-size: 30px;
+}
+.container p {
+  line-height: 2;
+}
+.container h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.cosmetic-part img {
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.medicine-part img {
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.scratch-part img {
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.article img {
+  max-width: 320px;
+  border: solid 1px teal;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  text-align: justify;
+}
+
+.con .logo img {
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+  border-radius: 10px;
 }
