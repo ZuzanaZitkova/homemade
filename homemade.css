@@ -9,57 +9,99 @@ body .container {
   max-width: 1000px;
   background-color: white;
   border-radius: 5px;
-  padding: 30px;
-}
-.cosmetic-part {
-  margin-top: 20px;
   padding: 0;
 }
+.article {
+  padding-right: 30px;
+  padding-left: 10px;
+  text-align: justify;
+}
+.courses {
+  padding: 30px;
+  text-align: justify;
+}
+footer {
+  padding-bottom: 50px;
+  font-size: 15px;
+}
+.courses .col-lg {
+  padding: 20px;
+}
+.courses img {
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+
+  border: solid 1px teal;
+}
+
+.article img:hover {
+  transform: scale(1.5);
+  }
+.courses a {
+  font-size: 20px;
+}
+.courses .shop {
+  font-size: 18px;
+}
+.cosmetic-part {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
 .medicine-part {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 .scratch-part {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 .container h1 {
   font-size: 3rem;
   text-align: center;
+  padding: 40px 20px 0px 20px;
 }
 .container h3 {
   text-align: center;
-
-  font-size: 30px;
+  font-size: 40px;
 }
 .container p {
   line-height: 2;
 }
 .container h4 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: rgba(95, 63, 63, 0.901);
 }
-.cosmetic-part img {
-  max-width: 500px;
-  border-radius: 10px;
-  margin-top: 40px;
+
+.container button {
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  font-size: 20px;
 }
-.medicine-part img {
-  max-width: 500px;
-  border-radius: 10px;
-  margin-top: 40px;
-}
-.scratch-part img {
-  max-width: 500px;
-  border-radius: 10px;
-  margin-top: 40px;
-}
+
 .article img {
   max-width: 320px;
   border: solid 1px teal;
   border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
+  margin: 20px 20px 0 0;
+  text-align: center;
+  transition: all 150ms ease-in-out;
   text-align: justify;
+}
+
+.article ul {
+  padding: 40px;
+  text-align: justify;
+}
+
+.article p {
+  padding: 30px 30px 0px 30px;
 }
 
 .con .logo img {
@@ -67,4 +109,45 @@ body .container {
   margin: 0 auto;
   width: 400px;
   border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .container h1 {
+    font-size: 35px;
+  }
+  .courses h3 {
+    font-size: 30px;
+  }
+  .courses h4 {
+    font-size: 25px;
+  }
+  .article img {
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .cosmetic-part {
+    margin: 20px;
+  }
+  .medicine-part {
+    margin: 20px;
+  }
+  .scratch-part {
+    margin: 20px;
+  }
+  .courses {
+    padding: 0;
+  }
+  .courses img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .courses .shop {
+    padding: 0 30px 20px 30px;
+  }
+  footer {
+    padding: 20px;
+  }
 }
