@@ -11,6 +11,7 @@ body .container {
   border-radius: 5px;
   padding: 0;
 }
+
 .article {
   padding-right: 30px;
   padding-left: 10px;
@@ -33,13 +34,17 @@ footer {
   margin: 0 auto;
   text-align: center;
   margin-top: 60px;
-
   border: solid 1px teal;
 }
 
 .article img:hover {
   transform: scale(1.5);
-  }
+  position: relative;
+  display: block;
+}
+.gallery {
+  position: relative;
+}
 .courses a {
   font-size: 20px;
 }
@@ -59,11 +64,41 @@ footer {
   margin-top: 50px;
   margin-bottom: 30px;
 }
-.container h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding: 40px 20px 0px 20px;
+
+.container .wrap-h {
+  position: relative;
 }
+
+.container .wrap-h:before {
+  content: ' ';
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  position: absolute;
+  margin: 20px 100px;
+  width: 80%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: linear-gradient(
+      rgba(149, 102, 25, 0.265),
+      rgba(149, 102, 25, 0.265)
+    ),
+    url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/608/original/Poppy-flowers-field-wallpaper.jpeg?1688669307');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.container .content-h h1 {
+  position: relative;
+  line-height: 0.8;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 20px 10px 20px;
+}
+
 .container h3 {
   text-align: center;
   font-size: 40px;
@@ -92,7 +127,8 @@ footer {
   margin: 20px 20px 0 0;
   text-align: center;
   transition: all 150ms ease-in-out;
-  text-align: justify;
+
+  display: block;
 }
 
 .article ul {
@@ -112,8 +148,9 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .container h1 {
-    font-size: 35px;
+  .container .content-h h1 {
+    font-size: 30px;
+    margin: 20px auto;
   }
   .courses h3 {
     font-size: 30px;
@@ -146,6 +183,10 @@ footer {
   }
   .courses .shop {
     padding: 0 30px 20px 30px;
+  }
+  .container .wrap-h:before {
+    width: 100%;
+    margin: 20px auto;
   }
   footer {
     padding: 20px;
