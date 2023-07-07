@@ -1,21 +1,33 @@
 body .con {
+  padding-top: 100px;
   background-color: rgb(251, 237, 230);
-  text-align: center;
 }
 body .container {
   font-family: 'Anonymous Pro', monospace;
   text-align: initial;
+
   margin-bottom: 50px;
   max-width: 1000px;
   background-color: white;
   border-radius: 5px;
-  padding: 0;
+  padding: 30px 0 0 0;
 }
 
 .article {
-  padding-right: 30px;
-  padding-left: 10px;
   text-align: justify;
+  padding: 20px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  grid-gap: 0px;
+}
+.gallery-next {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 10px 0px 10px;
+  grid-gap: 0px;
 }
 .courses {
   padding: 30px;
@@ -24,6 +36,7 @@ body .container {
 footer {
   padding-bottom: 50px;
   font-size: 15px;
+  text-align: center;
 }
 .courses .col-lg {
   padding: 20px;
@@ -37,14 +50,13 @@ footer {
   border: solid 1px teal;
 }
 
-.article img:hover {
+.gallery img:hover,
+.gallery-next img:hover {
   transform: scale(1.5);
   position: relative;
   display: block;
 }
-.gallery {
-  position: relative;
-}
+
 .courses a {
   font-size: 20px;
 }
@@ -87,9 +99,22 @@ footer {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
+  border: solid 1px teal;
+}
+footer a {
+  color: teal;
+}
+.container .content-h h1 {
+  position: relative;
+  line-height: 0.8;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 20px 10px 20px;
 }
 
-.container .content-h h1 {
+.container .content-h h3 {
   position: relative;
   line-height: 0.8;
   color: white;
@@ -102,6 +127,7 @@ footer {
 .container h3 {
   text-align: center;
   font-size: 40px;
+  color: white;
 }
 .container p {
   line-height: 2;
@@ -118,16 +144,16 @@ footer {
   margin: 20px auto;
   display: block;
   font-size: 20px;
+  border: solid 1px teal;
 }
 
-.article img {
+.gallery img,
+.gallery-next img {
   max-width: 320px;
   border: solid 1px teal;
   border-radius: 10px;
-  margin: 20px 20px 0 0;
   text-align: center;
   transition: all 150ms ease-in-out;
-
   display: block;
 }
 
@@ -139,18 +165,42 @@ footer {
 .article p {
   padding: 30px 30px 0px 30px;
 }
-
+.out-container {
+  position: fixed;
+}
 .con .logo img {
-  text-align: center;
-  margin: 0 auto;
-  width: 400px;
+  position: relative;
+  width: 200px;
   border-radius: 10px;
 }
 
+.social-links {
+  color: teal;
+  position: initial;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px auto;
+  background-color: white;
+  width: 60px;
+  border: solid 2px teal;
+  border-radius: 10px;
+}
+.social-links i {
+  margin: 15px;
+  color: teal;
+}
+.social-links i:hover {
+  cursor: pointer;
+}
 @media (max-width: 900px) {
+  body .container {
+    padding-top: 0;
+  }
+  body .con {
+    padding-top: 0px;
+  }
   .container .content-h h1 {
     font-size: 30px;
-    margin: 20px auto;
   }
   .courses h3 {
     font-size: 30px;
@@ -158,11 +208,21 @@ footer {
   .courses h4 {
     font-size: 25px;
   }
-  .article img {
+  .gallery img,
+  .gallery-next img {
     max-width: 500px;
     display: block;
     margin: 20px auto;
     text-align: center;
+  }
+  .gallery,
+  .gallery-next {
+    display: block;
+  }
+  .gallery img:hover,
+  .gallery-next img:hover {
+    transform: scale(1.2);
+    position: relative;
   }
   .cosmetic-part {
     margin: 20px;
@@ -174,7 +234,7 @@ footer {
     margin: 20px;
   }
   .courses {
-    padding: 0;
+    padding: 20px;
   }
   .courses img {
     display: block;
@@ -186,9 +246,38 @@ footer {
   }
   .container .wrap-h:before {
     width: 100%;
+    text-align: center;
     margin: 20px auto;
+    border: solid 1px teal;
+  }
+  footer p {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+  }
+  footer .logo-small img {
+    max-width: 250px;
+    padding: 0;
+  }
+  .instagram,
+  .twitter,
+  .tiktok,
+  .email,
+  .facebook {
+    padding: 10px;
+  }
+  footer .social-links-small {
+    font-size: 30px;
+    margin: 100px auto;
+    position: relative;
+    margin-right: 40px;
+    border: solid 2px teal;
+    color: teal;
+    border-radius: 10px;
+    background-color: white;
   }
   footer {
-    padding: 20px;
+    padding-bottom: 0px;
   }
 }
