@@ -150,7 +150,7 @@ footer a {
 
 .gallery img,
 .gallery-next img {
-  max-width: 320px;
+  max-width: 500px;
   border: solid 1px teal;
   border-radius: 10px;
   text-align: center;
@@ -270,7 +270,7 @@ footer a {
     padding: 10px;
   }
   footer .social-links-small {
-    font-size: 30px;
+    font-size: 25px;
     margin: 100px auto;
     position: relative;
     margin-right: 40px;
@@ -281,5 +281,65 @@ footer a {
   }
   footer {
     padding-bottom: 0px;
+  }
+  footer .social-links-small i {
+    margin: 100px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container .wrap-h:before {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .container .content-h h1 {
+    font-size: 20px;
+  }
+  .gallery img,
+  .gallery-next img,
+  .courses img,
+  .courses iframe {
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  .article {
+    text-align: justify;
+    font-size: 12px;
+  }
+  .container .content-h h3 {
+    font-size: 20px;
+  }
+
+  .courses {
+    font-size: 12px;
+  }
+  .courses .shop,
+  .courses .shop a {
+    font-size: 12px;
+  }
+  footer .logo-small img {
+    max-width: 150px;
+  }
+  footer .social-links-small {
+    font-size: 15px;
+  }
+
+  footer .col {
+    padding: 0px;
+  }
+  footer .social-links-small i {
+    margin: 70px 0px;
+  }
+  .instagram,
+  .twitter,
+  .tiktok,
+  .email,
+  .facebook {
+    padding: 5px;
+  }
+  footer {
+    font-size: 12px;
   }
 }
