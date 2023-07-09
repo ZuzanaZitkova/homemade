@@ -41,7 +41,8 @@ footer {
 .courses .col-lg {
   padding: 20px;
 }
-.courses img {
+.courses img,
+.courses iframe {
   max-width: 500px;
   border-radius: 10px;
   margin: 0 auto;
@@ -118,7 +119,7 @@ footer a {
   position: relative;
   line-height: 0.8;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   padding: 50px 20px 10px 20px;
@@ -203,7 +204,7 @@ footer a {
     font-size: 30px;
   }
   .courses h3 {
-    font-size: 30px;
+    font-size: 20px;
   }
   .courses h4 {
     font-size: 25px;
@@ -236,7 +237,8 @@ footer a {
   .courses {
     padding: 20px;
   }
-  .courses img {
+  .courses img,
+  .courses iframe {
     display: block;
     text-align: center;
     margin: 0 auto;
