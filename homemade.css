@@ -126,6 +126,7 @@ body .container {
   display: block;
   font-size: 20px;
   border: solid 1px teal;
+  transition: all 100ms ease-in-out;
 }
 
 .courses {
@@ -179,6 +180,7 @@ footer a {
   position: relative;
   width: 200px;
   border-radius: 10px;
+  transition: all 100ms ease-in-out;
 }
 .social-links {
   color: teal;
@@ -210,9 +212,9 @@ footer a {
     font-size: 30px;
   }
   .container .wrap-h:before {
-    width: 100%;
+    width: 95%;
     text-align: center;
-    margin: 20px auto;
+    margin: 20px 10px;
     border: solid 1px teal;
   }
   .courses h3 {
@@ -247,6 +249,9 @@ footer a {
     text-align: center;
     margin: 0 auto;
   }
+  .courses iframe:hover {
+    cursor: pointer;
+  }
   .cosmetic-part,
   .medicine-part,
   .scratch-part {
@@ -264,6 +269,7 @@ footer a {
   footer .logo-small img {
     max-width: 250px;
     padding: 0;
+    transition: all 100px ease-in-out;
   }
   .instagram,
   .twitter,
@@ -274,7 +280,7 @@ footer a {
   }
   footer .social-links-small {
     width: 300px;
-    padding: 0px;
+    padding: 5px;
     font-size: 25px;
     margin: 100px 50px 100px 0px;
     position: relative;
@@ -308,6 +314,7 @@ footer a {
   .courses iframe {
     max-width: 300px;
     max-height: 200px;
+    transition: all 100ms ease-in-out;
   }
   .article {
     text-align: justify;
